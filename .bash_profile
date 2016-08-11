@@ -1,4 +1,4 @@
-export PS1='\W (╯°□°)╯︵ '
+export PS1='\n\W (╯°□°)╯︵ '
 
 export PATH="$HOME/usr/local/bin:$HOME/.rbenv/bin:$HOME/.nodenv/bin:$PATH"
 
@@ -16,9 +16,9 @@ alias .5='cd ../../../../..'
 alias nom='rm -rf node_modules && npm cache clean && npm install'
 alias bom='rm -rf bower_components && bower cache clean && bower install'
 
-# Wordpress
+# Wordpress - jump to theme folder
 function wp() {
-  pwd
+  cd wp-content/themes/${PWD##*/}
 }
 
 alias wp=wp
