@@ -1,3 +1,9 @@
-### Install Google Web Fonts
+### Google Web Fonts
 
-`curl https://raw.githubusercontent.com/rod/dotfiles/master/google_fonts/install.sh | sh`
+```
+# Install fonts
+curl https://raw.githubusercontent.com/rod/dotfiles/master/google_fonts/install.sh | sh
+
+# Uninstall fonts
+curl https://raw.githubusercontent.com/rod/dotfiles/master/google_fonts/uninstall.sh | sh
+```
