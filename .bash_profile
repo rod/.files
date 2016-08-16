@@ -6,6 +6,7 @@ eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 
 alias ll='ls -laG'
+
 alias ..='cd ..'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
