@@ -16,7 +16,7 @@ echo "Un-Installing all Google Web Fonts onto your System"
 echo "Downloading font list..."
 cd ~/Documents/
 
-curl -L https://raw.githubusercontent.com/rod/dotfiles/master/google-fonts/fonts.txt -o fonts.txt
+curl -L https://raw.githubusercontent.com/rod/dotfiles/master/google_fonts/fonts.txt -o fonts.txt
 
 while read font; do
   $file_path$font
