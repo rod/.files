@@ -23,3 +23,5 @@ function wp() {
 }
 
 alias wp=wp
+
+alias fuck="fuck"
