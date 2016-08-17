@@ -5,7 +5,7 @@ export PATH="$HOME/usr/local/bin:$HOME/.rbenv/bin:$HOME/.nodenv/bin:$PATH"
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 
-alias ll='ls -laG'
+alias ll='ls -lhaG'
 
 alias ..='cd ..'
 alias ...='cd ../../../'
