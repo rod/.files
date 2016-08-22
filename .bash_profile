@@ -1,4 +1,4 @@
-export PS1='\n\W (╯°□°)╯︵ '
+export PS1='in \W\n(╯°□°)╯︵ '
 
 export PATH="$HOME/usr/local/bin:$HOME/.rbenv/bin:$HOME/.nodenv/bin:$PATH"
 
