@@ -1,4 +1,8 @@
-export PS1='in \W\n(╯°□°)╯︵ '
+git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+export PS1="\W\[\033[33m\]\$(git_branch)\[\033[00m\] (╯°□°)╯︵ "
 
 export PATH="$HOME/usr/local/bin:$HOME/.rbenv/bin:$HOME/.nodenv/bin:$PATH"
 
