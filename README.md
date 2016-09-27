@@ -1,9 +1,22 @@
-### Google Web Fonts
+## Homebrew
 
-```
-# Install fonts
-curl https://raw.githubusercontent.com/rod/dotfiles/master/google_fonts/install.sh | sh
+~~~
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Uninstall fonts
-curl https://raw.githubusercontent.com/rod/dotfiles/master/google_fonts/uninstall.sh | sh
-```
+$ brew install rbenv ruby-build nodenv node-build
+~~~
+
+
+## Google Web Fonts
+
+### Install
+
+~~~
+$ curl https://raw.githubusercontent.com/rod/dotfiles/master/google_fonts/install.sh | sh
+~~~
+
+### Uninstall
+
+~~~
+$ curl https://raw.githubusercontent.com/rod/dotfiles/master/google_fonts/uninstall.sh | sh
+~~~
