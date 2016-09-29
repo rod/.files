@@ -20,3 +20,9 @@ $ curl https://raw.githubusercontent.com/rod/dotfiles/master/google_fonts/instal
 ~~~
 $ curl https://raw.githubusercontent.com/rod/dotfiles/master/google_fonts/uninstall.sh | sh
 ~~~
+
+## Atom
+
+~~~
+$ apm install linter linter-eslint language-babel react pigments file-icons git-plus
+~~~
