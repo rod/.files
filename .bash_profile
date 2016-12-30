@@ -2,27 +2,23 @@
 export PATH="$HOME/bin:$PATH";
 
 # Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend `$PATH`.
-# * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+for file in ~/.{bash_prompt,exports,aliases,functions}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
 
-git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
+# Case-insensitive globbing (used in pathname expansion)
+shopt -s nocaseglob;
 
-export PS1="\W\[\033[33m\]\$(git_branch)\[\033[00m\] (╯°□°)╯︵ "
+# Append to the Bash history file, rather than overwriting it
+shopt -s histappend;
 
-export PATH="$HOME/usr/local/bin:$HOME/.rbenv/bin:$HOME/.nodenv/bin:$PATH"
+# Autocorrect typos in path names when using `cd`
+shopt -s cdspell;
 
-eval "$(rbenv init -)"
-eval "$(nodenv init -)"
-
-# Wordpress - jump to theme folder
-function wp() {
-  cd wp-content/themes/${PWD##*/}
-}
-
-alias wp=wp
+# Add tab completion for many Bash commands
+if which brew &> /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
+	source "$(brew --prefix)/share/bash-completion/bash_completion";
+elif [ -f /etc/bash_completion ]; then
+	source /etc/bash_completion;
+fi;
