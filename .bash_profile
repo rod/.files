@@ -1,5 +1,8 @@
 export PATH="$HOME/bin:$PATH";
 
+eval "$(nodenv init -)"
+eval "$(rbenv init -)"
+
 # Load dotfiles
 for file in ~/.{bash_prompt,exports,aliases,functions}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";

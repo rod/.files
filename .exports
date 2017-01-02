@@ -5,6 +5,3 @@ export EDITOR='atom';
 
 export PATH="$HOME/.nodenv/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
-
-eval "$(nodenv init -)"
-eval "$(rbenv init -)"
