@@ -51,5 +51,5 @@ prompt_git() {
 }
 
 # Set the terminal title and prompt.
-PS1="\u in \W \$(prompt_git \" on \")\n$ ";
+PS1="\u in \W \$(prompt_git \"on \")\n$ ";
 export PS1;
