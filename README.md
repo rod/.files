@@ -1,20 +1,31 @@
-## Install Homebrew & Homebrew Cask
+# dotfiles
+
+> 👊💥✌️
+
+## Installation
+
+```bash
+cd path/to/dotfiles
+source bootstrap.sh
+``` 
+
+### Homebrew & Homebrew Cask
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 sh ~/brew.sh
 ```
 
-## Atom
+### Atom
 
-### Themes
+#### Themes
 
 ```bash
 apm install atom-material-ui
 apm install whimsy batman
 ```
 
-### Packages
+#### Packages
 
 ```bash
 apm install aligner
