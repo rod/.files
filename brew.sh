@@ -8,6 +8,7 @@ brew install nodenv
 brew install ruby-build
 brew install rbenv
 
+brew cask install appcleaner
 brew cask install atom
 brew cask install dropbox
 brew cask install firefox
