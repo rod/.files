@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-# Make then enter directory
-function mkd() {
+# make then enter directory
+function md() {
   mkdir -p "$@" && cd "$_";
 }
 
-# File Size
+# file size
 function fs() {
   if du -b /dev/null > /dev/null 2>&1; then
     local arg=-sbh;
@@ -19,14 +19,14 @@ function fs() {
   fi;
 }
 
-# Start an HTTP server
+# start an http server
 function server() {
   local port="${1:-8000}";
   sleep 1 && open "http://localhost:${port}/" &
   python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port";
 }
 
-# Atom
+# atom
 function a() {
   if [ $# -eq 0 ]; then
     atom .;
@@ -35,7 +35,7 @@ function a() {
   fi;
 }
 
-# Vim
+# vim
 function v() {
   if [ $# -eq 0 ]; then
     vim .;
@@ -44,7 +44,7 @@ function v() {
   fi;
 }
 
-# Finder
+# finder
 function o() {
   if [ $# -eq 0 ]; then
     open .;

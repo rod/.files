@@ -1,25 +1,16 @@
 #!/usr/bin/env bash
 
+# setup
 brew update
 brew upgrade
 
+# install
+brew install hub
+brew install node
 brew install node-build
 brew install nodenv
 brew install ruby-build
 brew install rbenv
 
-brew cask install appcleaner
-brew cask install atom
-brew cask install dropbox
-brew cask install firefox
-brew cask install flux
-brew cask install google-chrome
-brew cask install google-drive
-brew cask install hyper
-brew cask install mamp
-brew cask install sketch
-brew cask install slack
-brew cask install sonos
-brew cask install spectacle
-
+# cleanup
 brew cleanup
