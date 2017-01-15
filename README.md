@@ -17,8 +17,10 @@ sh ~/brew.sh # install packages
 sh ~/brew-cask.sh # install apps and fonts
 ```
 
-### Misc
+### Packages
 
 ```bash
-sh ~/.apm.sh # atom packages
+sh ~/packages/apm.sh # atom packages
+sh ~/packages/npm.sh # npm packages
+sh ~/packages/gems.sh # gems
 ```
