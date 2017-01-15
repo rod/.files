@@ -40,5 +40,5 @@ prompt_git() {
 }
 
 # set the terminal title and prompt.
-PS1="\u in \W \$(prompt_git \"on \")\n$ ";
+PS1="\[\e[0;32m\]\u\[\e[0m\] in \[\e[0;34m\]\W\[\e[0m\] \$(prompt_git \"\[\e[0m\]on \[\e[0;35m\]\")\n\[\e[0m\]$ ";
 export PS1;
