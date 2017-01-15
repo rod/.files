@@ -38,7 +38,7 @@ prompt_git() {
 
     echo ${git_status};
 
-    if [[ ${git_status} =~ "Working directory clean" ]]; then
+    if [[ ${git_status} =~ "working tree clean" ]]; then
       state="${g}"
     elif [[ ${git_status} =~ "Changes to be committed" ]]; then
       state="${y}"
