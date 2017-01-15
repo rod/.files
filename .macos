@@ -21,7 +21,11 @@ sudo nvram SystemAudioVolume=" "
 # trackpad, mouse, keyboard, bluetooth accessories, and input
 ###
 
-# trackpad: enable tap to click for this user and for the login screen
+# TODO: configure right click on mouse
+# TODO: increase mouse tracking speed
+# TODO: increase trackpad tracking speed
+
+# FIXME: trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
