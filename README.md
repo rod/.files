@@ -7,7 +7,7 @@
 ### Aliases & Functions
 
 ```bash
-cd && git clone git@github.com:rod/dotfiles.git && cd dotfiles && source bootstrap.sh
+git clone git@github.com:rod/dotfiles.git ~/dotfile && cd dotfiles && source setup.sh
 ```
 
 ### Homebrew
@@ -20,5 +20,5 @@ sh ~/brew-cask.sh # install apps and fonts
 ### Misc
 
 ```bash
-sh ~/apm.sh # atom packages
+sh ~/.apm.sh # atom packages
 ```
