@@ -24,6 +24,7 @@ apm install zen
 
 # lang helpers
 apm install es6-javascript
+apm install language-ejs
 apm install language-haml
 apm install language-pug
 apm install meteor-api
