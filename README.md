@@ -1,6 +1,6 @@
 # dotfiles
 
-> ***my*** dotfiles for quick, painless machine setup 👊💥✌️
+> my dotfiles for quick, painless machine setups
 
 ## Install
 
@@ -24,3 +24,7 @@ sh ~/packages/apm.sh # atom packages
 sh ~/packages/npm.sh # npm packages
 sh ~/packages/gems.sh # gems
 ```
+
+---
+
+👊💥✌️

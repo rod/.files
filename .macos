@@ -21,11 +21,6 @@ sudo nvram SystemAudioVolume=" "
 # trackpad, mouse, keyboard, bluetooth accessories, and input
 ###
 
-# TODO: configure right click on mouse
-# TODO: increase mouse tracking speed
-# TODO: increase trackpad tracking speed
-# TODO: double click to minimize window
-
 # FIXME: trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
@@ -62,3 +57,9 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
   killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+
+# TODO: configure right click on mouse
+# TODO: increase mouse tracking speed
+# TODO: increase trackpad tracking speed
+# TODO: double click to minimize window
+# TODO: remove network icon from menu bar
