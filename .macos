@@ -63,3 +63,4 @@ echo "Done. Note that some of these changes require a logout/restart to take eff
 # TODO: increase trackpad tracking speed
 # TODO: double click to minimize window
 # TODO: remove network icon from menu bar
+# TODO: config make dock minimun size with max magnification
