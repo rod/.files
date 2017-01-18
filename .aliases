@@ -16,7 +16,9 @@ alias p="cd ~/projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
-alias mm="middleman"
+
+# dev
+alias mm="bundle exec middleman server"
 
 # list files
 alias l="ls -aG"
