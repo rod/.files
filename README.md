@@ -7,7 +7,7 @@
 ### Aliases & Functions
 
 ```bash
-git clone git@github.com:rod/dotfiles.git ~/dotfile && cd dotfiles && source setup.sh
+git clone git@github.com:rod/dotfiles.git ~/dotfiles && cd dotfiles && source setup.sh
 ```
 
 ### Homebrew
