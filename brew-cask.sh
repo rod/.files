@@ -24,6 +24,7 @@ brew cask install atom
 brew cask install hyper
 brew cask install imageoptim
 brew cask install mamp
+brew cask install postman
 brew cask install sketch
 
 # web
