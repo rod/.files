@@ -45,3 +45,4 @@ apm install linter-php
 apm install linter-ruby
 apm install linter-sass-lint
 apm install linter-scss-lint
+apm install linter-xo
