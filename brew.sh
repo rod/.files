@@ -11,6 +11,7 @@ brew install node-build
 brew install nodenv
 brew install ruby-build
 brew install rbenv
+brew install yarn
 
 # cleanup
 brew cleanup
