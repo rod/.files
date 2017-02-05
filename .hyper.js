@@ -1,7 +1,7 @@
 module.exports = {
   config: {
-    fontSize: 15,
-    fontFamily: 'Hack',
+    fontSize: 14,
+    fontFamily: 'fira code',
     termCSS: '',
   },
   plugins: [

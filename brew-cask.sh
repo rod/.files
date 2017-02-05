@@ -32,4 +32,4 @@ brew cask install firefox
 brew cask install google-chrome
 
 # font
-brew cask install font-hack
+brew cask install font-fira-code
