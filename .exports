@@ -5,3 +5,4 @@ export EDITOR='atom';
 
 export PATH="$HOME/.nodenv/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$PATH:`yarn global bin`"
