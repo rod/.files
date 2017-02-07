@@ -11,7 +11,7 @@ if ! xcode-select --print-path &> /dev/null; then
   xcode-select --install &> /dev/null
   # wait until the xcode command line tools are installed
   until xcode-select --print-path &> /dev/null; do
-      sleep 5
+    sleep 5
   done
   print_result $? 'Install XCode Command Line Tools'
   # point the `xcode-select` developer directory to
@@ -30,22 +30,22 @@ if ! which brew &> /dev/null; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-function makeIsSo() {
-	rsync --exclude ".git/" \
-		--exclude ".DS_Store" \
-		--exclude "bootstrap.sh" \
-		--exclude "README.md" \
-		-avh --no-perms . ~;
-	source ~/.bash_profile;
+function makeItSo() {
+  rsync --exclude ".git/" \
+    --exclude ".DS_Store" \
+    --exclude "bootstrap.sh" \
+    --exclude "README.md" \
+    -avh --no-perms . ~;
+  source ~/.bash_profile;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
-	makeIsSo;
+  makeItSo;
 else
-	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
-	echo "";
-	if [[ $REPLY =~ ^[Yy]$ ]]; then
-		makeIsSo;
-	fi;
+  read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
+  echo "";
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    makeItSo;
+  fi;
 fi;
-unset makeIsSo;
+unset makeItSo;

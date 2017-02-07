@@ -1,10 +1,10 @@
 module.exports = {
   config: {
-    fontSize: 14,
+    fontSize: 15,
     fontFamily: 'fira code',
     termCSS: '',
   },
   plugins: [
-    "hyper-snazzy",
+    'atom-snazzy',
   ],
 };
