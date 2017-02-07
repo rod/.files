@@ -5,6 +5,6 @@ module.exports = {
     termCSS: '',
   },
   plugins: [
-    'atom-snazzy',
+    'hyper-snazzy',
   ],
 };
