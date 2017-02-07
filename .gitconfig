@@ -7,7 +7,7 @@
   c = commit
   up = pull
   p = push
-  s = status
+  s = status -s
   sclone = clone --depth=1
   co = checkout
   df = diff --color --color-words --abbrev
