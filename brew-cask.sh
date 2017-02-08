@@ -21,6 +21,7 @@ brew cask install spectacle
 
 # dev
 brew cask install atom
+brew cask install docker
 brew cask install hyper
 brew cask install imageoptim
 brew cask install mamp
