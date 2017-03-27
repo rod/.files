@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # make vim the default editor.
-export EDITOR='atom';
+export EDITOR="vim";
 
 export PATH="$HOME/.nodenv/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
