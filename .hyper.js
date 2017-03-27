@@ -1,10 +1,8 @@
 module.exports = {
   config: {
     fontSize: 15,
-    fontFamily: 'fira code',
-    termCSS: '',
+    fontFamily: 'hack',
+    termCSS: ''
   },
-  plugins: [
-    'hyper-snazzy',
-  ],
+  plugins: ['hyper-snazzy']
 };
