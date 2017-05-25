@@ -35,6 +35,15 @@ function a() {
   fi;
 }
 
+# visual studio code
+function c() {
+  if [ $# -eq 0 ]; then
+    code .;
+  else
+    code "$@";
+  fi;
+}
+
 # vim
 function v() {
   if [ $# -eq 0 ]; then
