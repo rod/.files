@@ -4,7 +4,7 @@ eval "$(nodenv init -)"
 eval "$(rbenv init -)"
 
 # load dotfiles
-for file in ~/.{bash_prompt,exports,aliases,functions}; do
+for file in ~/.{prompt,exports,aliases,functions}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
