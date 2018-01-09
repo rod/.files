@@ -42,12 +42,12 @@ prompt_git() {
       git rev-parse --short HEAD 2> /dev/null || \
       echo '(unknown)')";
     [ -n "${s}" ] && s=" [${s}]";
-    echo -e "${1}${branchName}${2}${s}";
+    echo -e "${1}${branchName}${2}${s} ";
   else
     return;
   fi;
 }
 
 # set the terminal title and prompt.
-PS1="${g}\u${nc} in ${v}\W${nc} \$(prompt_git \"on ${y} \")${nc}> ";
+PS1="${g}\u${nc} in ${v}\W${nc} \$(prompt_git \"on ${y}\")${nc}> ";
 export PS1;
