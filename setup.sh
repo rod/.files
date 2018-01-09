@@ -4,7 +4,7 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
 
-# xcode command line tools
+# install xcode command line tools if necessary
 # thx https://github.com/alrra/dotfiles/blob/ff123ca9b9b/os/os_x/installs/install_xcode.sh
 if ! xcode-select --print-path &> /dev/null; then
   # prompt user to install the xcode command line tools
@@ -25,7 +25,7 @@ if ! xcode-select --print-path &> /dev/null; then
   print_result $? 'Agree with the XCode Command Line Tools licence'
 fi
 
-# homebrew
+# install homebrew if necessary
 if ! which brew &> /dev/null; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
@@ -33,7 +33,7 @@ fi
 function setup() {
   rsync --exclude ".git/" \
     --exclude ".DS_Store" \
-    --exclude "bootstrap.sh" \
+    --exclude "setup.sh" \
     --exclude "README.md" \
     -avh --no-perms . ~;
   source ~/.bash_profile;

@@ -7,27 +7,20 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Documents/"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias gh="cd ~/Github"
+alias gl="cd ~/Gitlab"
 alias g="git"
 alias h="history"
 alias j="jobs"
 
-# dev
-# middleman
-alias mm="bundle exec middleman"
-# docker
-alias dc="docker-compose"
-alias dnuke="docker kill $(docker ps -q) && docker rm $(docker ps -a -q) && docker rmi $(docker images -q)"
-
 # list files
 alias l="ls -aG"
 alias ll="ls -laG"
-alias ls="command ls -G"
 
-# remove .ds_store files
+# remove .ds_store files everywhere
 alias cleands="find . -type f -name '*.DS_Store' -ls -delete"
 
 # update macos, ruby gems, homebrew, npm, and their installed packages
@@ -48,6 +41,12 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 # url-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
-# clean install npm/bower
+# dev
+alias mm="bundle exec middleman"
+
+alias dc="docker-compose"
+alias dnuke="docker kill $(docker ps -q) && docker rm $(docker ps -a -q) && docker rmi $(docker images -q)"
+
+alias yom="yarn cache clean && rm -rf node_modules && yarn install"
 alias nom="npm cache clear && rm -rf node_modules && npm install"
 alias bom="bower cache clean && rm -rf bower_components && bower install"
