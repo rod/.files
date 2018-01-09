@@ -30,7 +30,7 @@ if ! which brew &> /dev/null; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-function makeItSo() {
+function setup() {
   rsync --exclude ".git/" \
     --exclude ".DS_Store" \
     --exclude "bootstrap.sh" \
@@ -45,7 +45,7 @@ else
   read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
   echo "";
   if [[ $REPLY =~ ^[Yy]$ ]]; then
-    makeItSo;
+    setup;
   fi;
 fi;
-unset makeItSo;
+unset setup;
