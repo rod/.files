@@ -1,5 +1,5 @@
 # .files
 
 ```bash
-git clone git@github.com:rod/.files.git && cd ~/.files && source setup.sh
+git clone git@github.com:rod/.files.git .files && cd ~/.files && source setup.sh
 ```
