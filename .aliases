@@ -46,5 +46,5 @@ alias dc="docker-compose"
 alias dnuke="docker kill $(docker ps -q) && docker rm $(docker ps -a -q) && docker rmi $(docker images -q)"
 
 alias yom="yarn cache clean && rm -rf node_modules && yarn install"
-alias nom="npm cache clear && rm -rf node_modules && npm install"
+alias nom="npm cache clear --force && rm -rf node_modules && npm install"
 alias bom="bower cache clean && rm -rf bower_components && bower install"

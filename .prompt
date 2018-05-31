@@ -49,5 +49,5 @@ prompt_git() {
 }
 
 # set the terminal title and prompt.
-PS1="${g}\W${nc} \$(prompt_git \"| ${b}\")${nc}> ";
+PS1="${g}\W${nc} \$(prompt_git \"x ${b}\")${nc}> ";
 export PS1;
