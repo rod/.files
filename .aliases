@@ -43,6 +43,7 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 alias mm="bundle exec middleman"
 
 alias dc="docker-compose"
+alias dm="docker-machine"
 alias dnuke="docker kill $(docker ps -q) && docker rm $(docker ps -a -q) && docker rmi $(docker images -q)"
 
 alias yom="yarn cache clean && rm -rf node_modules && yarn install"
