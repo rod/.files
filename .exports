@@ -7,3 +7,4 @@ export PATH="$HOME/.nodenv/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$PATH:`yarn global bin`"
+export VAULT_ADDR=https://vault.it.app-us1.com/
